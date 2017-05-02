@@ -1,0 +1,19 @@
+uuid: 3415295d-1dd9-4bf7-aad0-66198715f754
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_weather_more
+    - node.type.fox_sighting_report
+id: node.fox_sighting_report.field_report_weather_more
+field_name: field_report_weather_more
+entity_type: node
+bundle: fox_sighting_report
+label: 'Please specify the weather conditions'
+description: 'Please describe the weather conditions at the time of the animal(s) sighting.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

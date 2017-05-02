@@ -1,0 +1,19 @@
+uuid: 2613a662-32b2-4b05-8cd9-4d563138a65c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_comments
+    - node.type.coyote_sighting_report
+id: node.coyote_sighting_report.field_report_comments
+field_name: field_report_comments
+entity_type: node
+bundle: coyote_sighting_report
+label: Comments
+description: 'Do you have any additional comments? Your comments will not be made public.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

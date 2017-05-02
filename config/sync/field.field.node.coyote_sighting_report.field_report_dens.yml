@@ -1,0 +1,19 @@
+uuid: dbfd25a5-2bda-4f2a-af74-0bcfbea7595d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_dens
+    - node.type.coyote_sighting_report
+id: node.coyote_sighting_report.field_report_dens
+field_name: field_report_dens
+entity_type: node
+bundle: coyote_sighting_report
+label: Dens
+description: 'Do you know of any fox or coyote dens in the area? Please describe the den and location. If the den is on your property, please contact upeiredfox@gmail.com or include your email address in the form so that we can contact you and arrange permission to examine the den.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

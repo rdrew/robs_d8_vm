@@ -1,0 +1,276 @@
+uuid: 9017f0a0-9590-46a5-8d56-fd4278bb99a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wildlife_sighting_report.field_report_address
+    - field.field.node.wildlife_sighting_report.field_report_animal_acts
+    - field.field.node.wildlife_sighting_report.field_report_animal_acts_more
+    - field.field.node.wildlife_sighting_report.field_report_animal_enjoy
+    - field.field.node.wildlife_sighting_report.field_report_animal_seasons
+    - field.field.node.wildlife_sighting_report.field_report_animal_time
+    - field.field.node.wildlife_sighting_report.field_report_animal_visits
+    - field.field.node.wildlife_sighting_report.field_report_comments
+    - field.field.node.wildlife_sighting_report.field_report_date_and_time
+    - field.field.node.wildlife_sighting_report.field_report_email
+    - field.field.node.wildlife_sighting_report.field_report_experience
+    - field.field.node.wildlife_sighting_report.field_report_feed_seasons
+    - field.field.node.wildlife_sighting_report.field_report_feed_time
+    - field.field.node.wildlife_sighting_report.field_report_feed_type
+    - field.field.node.wildlife_sighting_report.field_report_feeder
+    - field.field.node.wildlife_sighting_report.field_report_feeder_animals
+    - field.field.node.wildlife_sighting_report.field_report_feeder_animals_more
+    - field.field.node.wildlife_sighting_report.field_report_feeder_area
+    - field.field.node.wildlife_sighting_report.field_report_feeder_more
+    - field.field.node.wildlife_sighting_report.field_report_fox_time
+    - field.field.node.wildlife_sighting_report.field_report_geolocation
+    - field.field.node.wildlife_sighting_report.field_report_individuals
+    - field.field.node.wildlife_sighting_report.field_report_visit_time
+    - node.type.wildlife_sighting_report
+  module:
+    - address
+    - datetime
+    - geolocation
+    - path
+id: node.wildlife_sighting_report.default
+targetEntityType: node
+bundle: wildlife_sighting_report
+mode: default
+content:
+  field_report_address:
+    weight: 18
+    settings:
+      default_country: CA
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_report_animal_acts:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_report_animal_acts_more:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        7ffccecb-f0cb-4192-8d01-2c2b4c1fb2ff:
+          dependee: field_report_feeder
+          settings:
+            state: visible
+            condition: value
+            grouping: XOR
+            values_set: 1
+            value: ''
+            values: 'Other (please specify below)'
+            value_form: {  }
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            element_view:
+              1: '1'
+              2: '2'
+              5: '5'
+              3: '0'
+              4: '0'
+            element_view_per_role: false
+            element_view_roles: {  }
+            element_edit:
+              1: '1'
+              3: '0'
+            element_edit_per_role: false
+            element_edit_roles: {  }
+            selector: ''
+            field_report_feeder:
+              -
+                value: 'Other (please specify below)'
+          entity_type: node
+          bundle: wildlife_sighting_report
+    type: string_textarea
+    region: content
+  field_report_animal_enjoy:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_animal_seasons:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_report_animal_time:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_animal_visits:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_comments:
+    weight: 22
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_report_date_and_time:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_report_email:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_report_experience:
+    weight: 20
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_report_feed_seasons:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_report_feed_time:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_feed_type:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_report_feeder:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_report_feeder_animals:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_report_feeder_animals_more:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_report_feeder_area:
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_feeder_more:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_report_fox_time:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_geolocation:
+    weight: 19
+    settings:
+      default_longitude: '-63.20301532745361'
+      default_latitude: '46.505334149477804'
+      google_map_settings:
+        height: 680px
+        width: 100%
+        type: HYBRID
+        zoom: '9'
+        maxZoom: 18
+        minZoom: 9
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        fullscreenControl: 1
+        scrollwheel: 1
+        gestureHandling: auto
+        draggable: 1
+        style: ''
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        rotateControl: 0
+        preferScrollingToZooming: 0
+        disableDoubleClickZoom: 0
+      auto_client_location: '0'
+      auto_client_location_marker: '0'
+      allow_override_map_settings: 0
+      populate_address_field: ''
+      target_address_field: null
+      explicite_actions_address_field: ''
+    third_party_settings: {  }
+    type: geolocation_googlegeocoder
+    region: content
+  field_report_individuals:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_visit_time:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 24
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

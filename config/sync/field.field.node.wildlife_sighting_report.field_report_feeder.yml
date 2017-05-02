@@ -1,0 +1,21 @@
+uuid: 9365441d-e3c0-4891-bff4-6073175561c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_feeder
+    - node.type.wildlife_sighting_report
+  module:
+    - options
+id: node.wildlife_sighting_report.field_report_feeder
+field_name: field_report_feeder
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'If you feed birds, which type of feeding do you do?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

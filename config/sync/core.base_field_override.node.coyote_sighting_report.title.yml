@@ -1,0 +1,18 @@
+uuid: 4be35b4b-789b-44f3-8e96-ee97340565ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.coyote_sighting_report
+id: node.coyote_sighting_report.title
+field_name: title
+entity_type: node
+bundle: coyote_sighting_report
+label: Report
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

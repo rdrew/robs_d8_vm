@@ -1,0 +1,64 @@
+uuid: 9b05bbd8-e70e-4418-ac48-dcaef303fa9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.wildlife_sighting_report.field_report_address
+    - field.field.node.wildlife_sighting_report.field_report_animal_acts
+    - field.field.node.wildlife_sighting_report.field_report_animal_acts_more
+    - field.field.node.wildlife_sighting_report.field_report_animal_enjoy
+    - field.field.node.wildlife_sighting_report.field_report_animal_seasons
+    - field.field.node.wildlife_sighting_report.field_report_animal_time
+    - field.field.node.wildlife_sighting_report.field_report_animal_visits
+    - field.field.node.wildlife_sighting_report.field_report_comments
+    - field.field.node.wildlife_sighting_report.field_report_date_and_time
+    - field.field.node.wildlife_sighting_report.field_report_email
+    - field.field.node.wildlife_sighting_report.field_report_experience
+    - field.field.node.wildlife_sighting_report.field_report_feed_seasons
+    - field.field.node.wildlife_sighting_report.field_report_feed_time
+    - field.field.node.wildlife_sighting_report.field_report_feed_type
+    - field.field.node.wildlife_sighting_report.field_report_feeder
+    - field.field.node.wildlife_sighting_report.field_report_feeder_animals
+    - field.field.node.wildlife_sighting_report.field_report_feeder_animals_more
+    - field.field.node.wildlife_sighting_report.field_report_feeder_area
+    - field.field.node.wildlife_sighting_report.field_report_feeder_more
+    - field.field.node.wildlife_sighting_report.field_report_fox_time
+    - field.field.node.wildlife_sighting_report.field_report_geolocation
+    - field.field.node.wildlife_sighting_report.field_report_individuals
+    - field.field.node.wildlife_sighting_report.field_report_visit_time
+    - node.type.wildlife_sighting_report
+  module:
+    - user
+id: node.wildlife_sighting_report.teaser
+targetEntityType: node
+bundle: wildlife_sighting_report
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_report_address: true
+  field_report_animal_acts: true
+  field_report_animal_acts_more: true
+  field_report_animal_enjoy: true
+  field_report_animal_seasons: true
+  field_report_animal_time: true
+  field_report_animal_visits: true
+  field_report_comments: true
+  field_report_date_and_time: true
+  field_report_email: true
+  field_report_experience: true
+  field_report_feed_seasons: true
+  field_report_feed_time: true
+  field_report_feed_type: true
+  field_report_feeder: true
+  field_report_feeder_animals: true
+  field_report_feeder_animals_more: true
+  field_report_feeder_area: true
+  field_report_feeder_more: true
+  field_report_fox_time: true
+  field_report_geolocation: true
+  field_report_individuals: true
+  field_report_visit_time: true

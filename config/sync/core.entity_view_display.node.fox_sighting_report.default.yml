@@ -1,0 +1,238 @@
+uuid: dc5420a3-5486-4da9-85d8-5d554586ab19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fox_sighting_report.field_fox_report_colour
+    - field.field.node.fox_sighting_report.field_fox_report_colour_2
+    - field.field.node.fox_sighting_report.field_fox_report_colour_3
+    - field.field.node.fox_sighting_report.field_fox_report_colour_more
+    - field.field.node.fox_sighting_report.field_report_activity
+    - field.field.node.fox_sighting_report.field_report_address
+    - field.field.node.fox_sighting_report.field_report_age
+    - field.field.node.fox_sighting_report.field_report_age_2
+    - field.field.node.fox_sighting_report.field_report_age_3
+    - field.field.node.fox_sighting_report.field_report_age_more
+    - field.field.node.fox_sighting_report.field_report_comments
+    - field.field.node.fox_sighting_report.field_report_count
+    - field.field.node.fox_sighting_report.field_report_count_more
+    - field.field.node.fox_sighting_report.field_report_date_and_time
+    - field.field.node.fox_sighting_report.field_report_dens
+    - field.field.node.fox_sighting_report.field_report_email
+    - field.field.node.fox_sighting_report.field_report_experience
+    - field.field.node.fox_sighting_report.field_report_frequency
+    - field.field.node.fox_sighting_report.field_report_frequency_more
+    - field.field.node.fox_sighting_report.field_report_geolocation
+    - field.field.node.fox_sighting_report.field_report_photo
+    - field.field.node.fox_sighting_report.field_report_weather
+    - field.field.node.fox_sighting_report.field_report_weather_more
+    - node.type.fox_sighting_report
+  module:
+    - address
+    - datetime
+    - geolocation
+    - options
+    - user
+id: node.fox_sighting_report.default
+targetEntityType: node
+bundle: fox_sighting_report
+mode: default
+content:
+  field_fox_report_colour:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_fox_report_colour_2:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_fox_report_colour_3:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_fox_report_colour_more:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_activity:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_address:
+    weight: 22
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_report_age:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_report_age_2:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_report_age_3:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_report_age_more:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_comments:
+    weight: 20
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_count:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_report_count_more:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_date_and_time:
+    weight: 0
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_report_dens:
+    weight: 16
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_email:
+    weight: 19
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_experience:
+    weight: 18
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_frequency:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_report_frequency_more:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_geolocation:
+    weight: 1
+    label: above
+    settings:
+      title: ''
+      set_marker: '1'
+      common_map: ''
+      info_text: ''
+      use_overridden_map_settings: 0
+      google_map_settings:
+        type: ROADMAP
+        zoom: '10'
+        minZoom: 0
+        maxZoom: 18
+        rotateControl: 0
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        fullscreenControl: 0
+        scrollwheel: 1
+        disableDoubleClickZoom: 0
+        draggable: 1
+        height: 400px
+        width: 100%
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        style: ''
+        preferScrollingToZooming: 0
+        gestureHandling: auto
+    third_party_settings: {  }
+    type: geolocation_map
+    region: content
+  field_report_photo:
+    weight: 17
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_report_weather:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_report_weather_more:
+    weight: 21
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 23
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

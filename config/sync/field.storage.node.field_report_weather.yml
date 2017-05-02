@@ -1,0 +1,33 @@
+uuid: 07f95de8-c0ac-4f68-9310-9833e5658631
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_report_weather
+field_name: field_report_weather
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Clear
+      label: Clear
+    -
+      value: Cloudy
+      label: Cloudy
+    -
+      value: Rainy
+      label: Rainy
+    -
+      value: 'Other (please specify below)'
+      label: 'Other (please specify below)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,51 @@
+uuid: dd41c289-ad9e-47ce-bbfa-3ad3a15cb71b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6882829a-682b-4ff2-a8a9-369f7d6f9a94'
+  module:
+    - block_content
+    - ctools
+    - node
+    - user
+  theme:
+    - helios
+id: helios_block_coyote_sightings
+theme: helios
+region: menus
+weight: -6
+provider: null
+plugin: 'block_content:6882829a-682b-4ff2-a8a9-369f7d6f9a94'
+settings:
+  id: 'block_content:6882829a-682b-4ff2-a8a9-369f7d6f9a94'
+  label: 'Coyote Sightings'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      coyote_sighting_report: coyote_sighting_report
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      coyote_sighting_report: coyote_sighting_report
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

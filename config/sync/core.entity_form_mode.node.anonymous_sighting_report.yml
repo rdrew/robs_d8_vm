@@ -1,0 +1,10 @@
+uuid: 3440e830-878c-4973-b271-268df1af414a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.anonymous_sighting_report
+label: 'Anonymous sighting report'
+targetEntityType: node
+cache: true

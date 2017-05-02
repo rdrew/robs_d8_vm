@@ -1,0 +1,19 @@
+uuid: 34c973b1-2850-437d-b4ff-7bda57f1085e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_email
+    - node.type.wildlife_sighting_report
+id: node.wildlife_sighting_report.field_report_email
+field_name: field_report_email
+entity_type: node
+bundle: wildlife_sighting_report
+label: Email
+description: 'Please provide your email address (optional). Your email address will not be published.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

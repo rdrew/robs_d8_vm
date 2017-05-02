@@ -1,0 +1,7 @@
+uuid: 8fa0b3b3-af5c-4ef3-a992-a580f9c99bb3
+langcode: en
+status: true
+dependencies: {  }
+formId: node_fox_sighting_report_form
+captchaType: recaptcha/reCAPTCHA
+label: node_fox_sighting_report_form

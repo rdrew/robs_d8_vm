@@ -1,0 +1,22 @@
+uuid: 3f428db8-e3e2-4664-afc0-5a9c4cd4a2ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - helios
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: helios_messages
+theme: helios
+region: menus
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

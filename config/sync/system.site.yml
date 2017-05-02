@@ -1,0 +1,14 @@
+uuid: 9459dab1-c9a5-49e6-836d-54a6fa9ab314
+name: AMaRS-yipeee
+mail: evkennedy@upei.ca
+slogan: 'Animal Movement and Resource Selection'
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

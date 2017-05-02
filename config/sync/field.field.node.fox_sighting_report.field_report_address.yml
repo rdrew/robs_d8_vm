@@ -1,0 +1,50 @@
+uuid: 922d972d-7edd-4f98-8b69-3176e01f0e94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_address
+    - node.type.fox_sighting_report
+  module:
+    - address
+id: node.fox_sighting_report.field_report_address
+field_name: field_report_address
+entity_type: node
+bundle: fox_sighting_report
+label: Address
+description: 'Please enter your name and the address of the location of the animal sighting.'
+required: false
+translatable: false
+default_value:
+  -
+    langcode: null
+    country_code: CA
+    administrative_area: ''
+    locality: ''
+    dependent_locality: ''
+    postal_code: ''
+    sorting_code: ''
+    address_line1: ''
+    address_line2: ''
+    organization: ''
+    given_name: ''
+    additional_name: ''
+    family_name: ''
+default_value_callback: ''
+settings:
+  available_countries:
+    CA: CA
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    sortingCode: sortingCode
+    addressLine1: addressLine1
+    givenName: givenName
+    familyName: familyName
+    addressLine2: '0'
+    organization: '0'
+    additionalName: '0'
+  langcode_override: ''
+field_type: address

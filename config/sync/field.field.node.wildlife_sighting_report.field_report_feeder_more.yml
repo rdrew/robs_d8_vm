@@ -1,0 +1,19 @@
+uuid: 9c9712c6-19f6-44c9-b513-74f823ae0e45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_feeder_more
+    - node.type.wildlife_sighting_report
+id: node.wildlife_sighting_report.field_report_feeder_more
+field_name: field_report_feeder_more
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'Please specify type of bird feeding'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

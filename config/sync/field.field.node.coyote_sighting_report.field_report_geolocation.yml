@@ -1,0 +1,21 @@
+uuid: c77df939-1838-49f6-a1e0-7e09e97c49c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_geolocation
+    - node.type.coyote_sighting_report
+  module:
+    - geolocation
+id: node.coyote_sighting_report.field_report_geolocation
+field_name: field_report_geolocation
+entity_type: node
+bundle: coyote_sighting_report
+label: Geolocation
+description: 'Please click the map to place a marker on the location of the sighting.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

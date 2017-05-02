@@ -1,0 +1,21 @@
+uuid: b3678b5d-b872-494d-9fda-adf274a62d13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_individuals
+    - node.type.wildlife_sighting_report
+  module:
+    - options
+id: node.wildlife_sighting_report.field_report_individuals
+field_name: field_report_individuals
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'How many individual animals do you generally see at once?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

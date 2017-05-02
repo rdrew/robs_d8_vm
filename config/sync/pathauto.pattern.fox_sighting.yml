@@ -1,0 +1,22 @@
+uuid: d9549af8-25b6-4201-9b06-1b91ae9028e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: fox_sighting
+label: 'Fox sighting'
+type: 'canonical_entities:node'
+pattern: 'fox-sighting/[node:field_report_date_and_time]'
+selection_criteria:
+  220aaa31-3ac1-4cc4-aced-aa183d9663ee:
+    id: node_type
+    bundles:
+      fox_sighting_report: fox_sighting_report
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 220aaa31-3ac1-4cc4-aced-aa183d9663ee
+selection_logic: and
+weight: -5
+relationships: {  }

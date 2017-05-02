@@ -1,0 +1,34 @@
+uuid: 01d9a1ac-2ded-409a-a374-900a7489bee8
+langcode: en
+status: true
+dependencies: {  }
+id: coyote1
+migration_tags: null
+migration_group: null
+label: 'Import coyote_sighting_report'
+source:
+  plugin: csv
+  path: /var/www/html/drupal/sites/amars/files/coyote1.csv
+  header_row_count: 1
+  keys:
+    - nid
+process:
+  field_sighting_date_and_time: dateandtime
+  field_sighting_animal_count: animalcount
+  field_sighting_activity: activity
+  field_sighting_comments: comments
+  field_sighting_den: den
+  field_sighting_eat: eat
+  field_sighting_photo: photo
+  field_sighting_email: email
+  field_sighting_street: street
+  field_sighting_city: city
+  field_sighting_postal_code: pcode
+  field_sighting_geolocation/lng: long
+  field_sighting_geolocation/lat: lat
+  type:
+    plugin: default_value
+    default_value: coyote_sighting_report
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null

@@ -1,0 +1,33 @@
+uuid: f4158c6a-8598-4f27-b32c-2d756ce96503
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_report_visit_time
+field_name: field_report_visit_time
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Less than 1 minute'
+      label: 'Less than 1 minute'
+    -
+      value: 'Less than 5 minutes'
+      label: 'Less than 5 minutes'
+    -
+      value: 'Less than 10 minutes'
+      label: 'Less than 10 minutes'
+    -
+      value: 'More than 10 minutes'
+      label: 'More than 10 minutes'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

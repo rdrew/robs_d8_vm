@@ -1,0 +1,23 @@
+uuid: ef754e10-bbab-4392-a9de-91545891fcb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_age
+    - node.type.fox_sighting_report
+  module:
+    - options
+id: node.fox_sighting_report.field_report_age
+field_name: field_report_age
+entity_type: node
+bundle: fox_sighting_report
+label: 'Age of animal'
+description: 'Please indicate the age of the animal.'
+required: false
+translatable: false
+default_value:
+  -
+    value: Unknown
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,35 @@
+uuid: 31116d79-4f2e-4ed3-8d14-c2cde69b546d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:53e1879e-8111-4d9a-a835-4e0545238705'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - helios
+id: helios_facebook_urban_fox_project
+theme: helios
+region: menus
+weight: -3
+provider: null
+plugin: 'block_content:53e1879e-8111-4d9a-a835-4e0545238705'
+settings:
+  id: 'block_content:53e1879e-8111-4d9a-a835-4e0545238705'
+  label: 'Facebook logo linking to Urban Red Fox Project.'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      coyote_sighting_report: coyote_sighting_report
+      fox_sighting_report: fox_sighting_report
+      wildlife_sighting_report: wildlife_sighting_report
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

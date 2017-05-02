@@ -1,0 +1,7 @@
+uuid: dbbdac5a-241a-4809-83ed-752d14624b52
+langcode: en
+status: true
+dependencies: {  }
+formId: entity_form_display_edit_form
+captchaType: recaptcha/reCAPTCHA
+label: entity_form_display_edit_form

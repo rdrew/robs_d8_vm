@@ -1,0 +1,22 @@
+uuid: 6be2f445-74f0-4605-a14e-e481df1afb1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fox_sighting_report
+id: node.fox_sighting_report.promote
+field_name: promote
+entity_type: node
+bundle: fox_sighting_report
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

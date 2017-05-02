@@ -1,0 +1,56 @@
+uuid: 54383662-f541-4faa-9820-965377f71e4e
+langcode: en
+status: true
+dependencies: {  }
+id: newf7
+migration_tags: null
+migration_group: null
+label: 'Import fox_sighting_report'
+source:
+  plugin: csv
+  path: /var/www/html/drupal/sites/amars/files/newf7.csv
+  header_row_count: 1
+  keys:
+    - nid
+process:
+  field_report_date_and_time: dateandtime
+  field_report_frequency: frequency
+  field_report_frequency_more: frequencymore
+  field_report_count: animalcount
+  field_report_count_more: animalcountmore
+  field_report_age: age
+  field_report_age_2: age2
+  field_report_age_3: age3
+  field_report_age_more: agemore
+  field_fox_report_colour: colour
+  field_fox_report_colour_2: colour2
+  field_fox_report_colour_3: colour3
+  field_report_activity: activity
+  field_report_weather: weather
+  field_report_weather_more: weathermore
+  field_report_dens: den
+  field_report_address/country_code:
+    plugin: default_value
+    default_value: CA
+  field_report_address/langcode:
+    plugin: default_value
+    default_value: en
+  field_report_address/first_name: name
+  field_report_address/address_line1: street
+  field_report_address/locality: city
+  field_report_address/administrative_area:
+    plugin: default_value
+    default_value: PE
+  field_report_address/postal_code: pcode
+  field_report_geolocation/lat: lat
+  field_report_geolocation/lng: lng
+  field_report_photo: photo
+  field_report_experience: exp
+  field_report_email: email
+  field_report_comments: comments
+  type:
+    plugin: default_value
+    default_value: fox_sighting_report
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null

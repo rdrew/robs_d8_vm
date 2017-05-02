@@ -1,0 +1,33 @@
+uuid: 797936d9-9692-4010-ba2e-8b53ef04202d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_report_animal_seasons
+field_name: field_report_animal_seasons
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Spring
+      label: Spring
+    -
+      value: Summer
+      label: Summer
+    -
+      value: Fall
+      label: Fall
+    -
+      value: Winter
+      label: Winter
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

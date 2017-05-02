@@ -1,0 +1,21 @@
+uuid: 236f5e73-bab8-4a85-af32-817b1dc36ef0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_feeder_animals
+    - node.type.wildlife_sighting_report
+  module:
+    - options
+id: node.wildlife_sighting_report.field_report_feeder_animals
+field_name: field_report_feeder_animals
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'Do you see animals other than birds at these feeders, if so which?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

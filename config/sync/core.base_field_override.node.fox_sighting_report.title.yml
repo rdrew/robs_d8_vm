@@ -1,0 +1,18 @@
+uuid: b9a6f1eb-1113-4cc7-98b9-996e3a91babb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fox_sighting_report
+id: node.fox_sighting_report.title
+field_name: title
+entity_type: node
+bundle: fox_sighting_report
+label: Report
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

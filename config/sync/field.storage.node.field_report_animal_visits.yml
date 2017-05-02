@@ -1,0 +1,39 @@
+uuid: bf66efc8-eb66-4365-abe9-f0a35730f0b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_report_animal_visits
+field_name: field_report_animal_visits
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Every day'
+      label: 'Every day'
+    -
+      value: 'Every other day'
+      label: 'Every other day'
+    -
+      value: 'Once a week'
+      label: 'Once a week'
+    -
+      value: 'Every two weeks'
+      label: 'Every two weeks'
+    -
+      value: 'Once a month'
+      label: 'Once a month'
+    -
+      value: 'Very rarely'
+      label: 'Very rarely'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

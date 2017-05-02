@@ -1,0 +1,21 @@
+uuid: 64713fc0-8539-424f-8213-2caaac32384b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_animal_time
+    - node.type.wildlife_sighting_report
+  module:
+    - options
+id: node.wildlife_sighting_report.field_report_animal_time
+field_name: field_report_animal_time
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'How long ago did you begin seeing these animals at the feeders?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

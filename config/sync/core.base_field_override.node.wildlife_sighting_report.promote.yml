@@ -1,0 +1,22 @@
+uuid: af10c1a9-e34d-4000-b104-6c25c9f1c0d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wildlife_sighting_report
+id: node.wildlife_sighting_report.promote
+field_name: promote
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

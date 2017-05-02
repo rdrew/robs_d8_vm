@@ -1,0 +1,23 @@
+uuid: 7741425a-9992-4951-a8cd-4bd5f7030bc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fox_report_colour_2
+    - node.type.fox_sighting_report
+  module:
+    - options
+id: node.fox_sighting_report.field_fox_report_colour_2
+field_name: field_fox_report_colour_2
+entity_type: node
+bundle: fox_sighting_report
+label: 'Colour of second animal'
+description: 'Please indicate the colour of the second animal.'
+required: false
+translatable: false
+default_value:
+  -
+    value: Unknown
+default_value_callback: ''
+settings: {  }
+field_type: list_string

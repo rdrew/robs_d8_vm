@@ -1,0 +1,7 @@
+uuid: d2445385-58ec-42c0-be63-c76b492e2e14
+langcode: en
+status: true
+dependencies: {  }
+formId: node_wildlife_sighting_report_form
+captchaType: recaptcha/reCAPTCHA
+label: node_wildlife_sighting_report_form

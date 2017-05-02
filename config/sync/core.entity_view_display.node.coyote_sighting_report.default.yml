@@ -1,0 +1,122 @@
+uuid: 7d35944b-e432-42a5-870c-8d64fb2781fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.coyote_sighting_report.field_report_activity
+    - field.field.node.coyote_sighting_report.field_report_address
+    - field.field.node.coyote_sighting_report.field_report_comments
+    - field.field.node.coyote_sighting_report.field_report_count
+    - field.field.node.coyote_sighting_report.field_report_count_more
+    - field.field.node.coyote_sighting_report.field_report_date_and_time
+    - field.field.node.coyote_sighting_report.field_report_dens
+    - field.field.node.coyote_sighting_report.field_report_diet
+    - field.field.node.coyote_sighting_report.field_report_email
+    - field.field.node.coyote_sighting_report.field_report_experience
+    - field.field.node.coyote_sighting_report.field_report_geolocation
+    - field.field.node.coyote_sighting_report.field_report_photo
+    - node.type.coyote_sighting_report
+  module:
+    - address
+    - datetime
+    - geolocation
+    - options
+    - user
+id: node.coyote_sighting_report.default
+targetEntityType: node
+bundle: coyote_sighting_report
+mode: default
+content:
+  field_report_activity:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_address:
+    weight: 116
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_report_comments:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_count:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_report_count_more:
+    weight: 117
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_date_and_time:
+    weight: 101
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_report_dens:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_diet:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_email:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_experience:
+    weight: 118
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_report_geolocation:
+    weight: 112
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  field_report_photo:
+    weight: 106
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

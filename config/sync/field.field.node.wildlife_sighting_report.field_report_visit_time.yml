@@ -1,0 +1,21 @@
+uuid: 3a0793ba-3912-42d8-944b-14807cf50edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_visit_time
+    - node.type.wildlife_sighting_report
+  module:
+    - options
+id: node.wildlife_sighting_report.field_report_visit_time
+field_name: field_report_visit_time
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'How long do the animals usually visit the feeder for?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

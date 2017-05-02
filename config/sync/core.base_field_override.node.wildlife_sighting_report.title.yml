@@ -1,0 +1,18 @@
+uuid: 3e8200ab-9f6f-4138-8245-2840a40f37c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wildlife_sighting_report
+id: node.wildlife_sighting_report.title
+field_name: title
+entity_type: node
+bundle: wildlife_sighting_report
+label: Report
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

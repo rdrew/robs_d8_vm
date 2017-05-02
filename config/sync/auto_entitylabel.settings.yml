@@ -1,0 +1,14 @@
+node_type_fox_sighting_report_status: '1'
+node_type_fox_sighting_report_pattern: 'Fox Sighting, [node:field_report_date_and_time]'
+node_type_fox_sighting_report_php: 0
+submit: 'Save configuration'
+form_build_id: form-qCtlieLmFjuafQ1tNdF5_WKcvrTFh8Dnb6N64pdtFBE
+form_token: 47xffa0URTZIyGd_66wqvD-jwl5N2bOtX3eOe5eaIAI
+form_id: auto_entitylabel_settings_form
+op: 'Save configuration'
+node_type_coyote_sighting_report_status: '1'
+node_type_coyote_sighting_report_pattern: 'Coyote Sighting, [node:field_report_date_and_time]'
+node_type_coyote_sighting_report_php: 0
+node_type_wildlife_sighting_report_status: '1'
+node_type_wildlife_sighting_report_pattern: 'Wildlife Sighting, [node:field_report_date_and_time]'
+node_type_wildlife_sighting_report_php: 0

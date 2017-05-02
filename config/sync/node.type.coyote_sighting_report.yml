@@ -1,0 +1,17 @@
+uuid: f7da67c1-20f5-4a67-9274-fd91d520151a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Coyote sighting report'
+type: coyote_sighting_report
+description: 'A data entry form, available to the public, for tracking sightings of coyotes on Prince Edward Island using geolocation and Google Maps to indicate precise location.'
+help: 'Please record all available details of your coyote sighting using the map and form below.'
+new_revision: false
+preview_mode: 0
+display_submitted: false

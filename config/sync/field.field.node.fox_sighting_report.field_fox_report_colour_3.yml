@@ -1,0 +1,23 @@
+uuid: f0abd419-5ef9-476d-aec8-59553305f323
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fox_report_colour_3
+    - node.type.fox_sighting_report
+  module:
+    - options
+id: node.fox_sighting_report.field_fox_report_colour_3
+field_name: field_fox_report_colour_3
+entity_type: node
+bundle: fox_sighting_report
+label: 'Colour of third animal'
+description: 'Please indicate the colour of the third animal.'
+required: false
+translatable: false
+default_value:
+  -
+    value: Unknown
+default_value_callback: ''
+settings: {  }
+field_type: list_string

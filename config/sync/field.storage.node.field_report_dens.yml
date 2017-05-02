@@ -1,0 +1,19 @@
+uuid: 948afeae-96fe-4e93-85f2-e1b85c4d0faf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_report_dens
+field_name: field_report_dens
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

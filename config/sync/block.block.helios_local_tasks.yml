@@ -1,0 +1,22 @@
+uuid: 9bbe583e-09b7-4319-a9df-577e24ffa26c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - helios
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: helios_local_tasks
+theme: helios
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

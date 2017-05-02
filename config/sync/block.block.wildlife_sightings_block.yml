@@ -1,0 +1,57 @@
+uuid: 4c94e0e5-9dfe-447d-8349-430fda568496
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:edf8b95a-9a46-4d77-9a68-cf9bb865435f'
+  module:
+    - block_content
+    - ctools
+    - node
+    - system
+    - user
+  theme:
+    - bartik
+id: wildlife_sightings_block
+theme: bartik
+region: highlighted
+weight: -6
+provider: null
+plugin: 'block_content:edf8b95a-9a46-4d77-9a68-cf9bb865435f'
+settings:
+  id: 'block_content:edf8b95a-9a46-4d77-9a68-cf9bb865435f'
+  label: 'Wildlife Sightings'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      wildlife_sighting_report: wildlife_sighting_report
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /node/add/wildlife_sighting_report
+    negate: false
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      wildlife_sighting_report: wildlife_sighting_report
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

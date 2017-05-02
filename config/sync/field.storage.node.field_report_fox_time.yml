@@ -1,0 +1,36 @@
+uuid: 27f694bf-490c-4283-80f6-cfd2ce4c98af
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_report_fox_time
+field_name: field_report_fox_time
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'First time'
+      label: 'First time'
+    -
+      value: 'Less than 1 year'
+      label: 'Less than 1 year'
+    -
+      value: 'Less than 2 years'
+      label: 'Less than 2 years'
+    -
+      value: 'Less than 3 years'
+      label: 'Less than 3 years'
+    -
+      value: 'Greater than 3 years'
+      label: 'Greater than 3 years'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

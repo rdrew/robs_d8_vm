@@ -1,0 +1,23 @@
+uuid: 1f51d27a-753e-4106-9a6a-03d59706f382
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fox_report_colour
+    - node.type.fox_sighting_report
+  module:
+    - options
+id: node.fox_sighting_report.field_fox_report_colour
+field_name: field_fox_report_colour
+entity_type: node
+bundle: fox_sighting_report
+label: 'Colour of animal'
+description: 'Please indicate the colour of the animal.'
+required: false
+translatable: false
+default_value:
+  -
+    value: Unknown
+default_value_callback: ''
+settings: {  }
+field_type: list_string

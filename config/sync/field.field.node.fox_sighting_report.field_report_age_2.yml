@@ -1,0 +1,23 @@
+uuid: 89ea51ad-7293-4651-9d80-10fae4698d41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_age_2
+    - node.type.fox_sighting_report
+  module:
+    - options
+id: node.fox_sighting_report.field_report_age_2
+field_name: field_report_age_2
+entity_type: node
+bundle: fox_sighting_report
+label: 'Age of second animal'
+description: 'Please indicate the age of the second animal.'
+required: false
+translatable: false
+default_value:
+  -
+    value: Unknown
+default_value_callback: ''
+settings: {  }
+field_type: list_string

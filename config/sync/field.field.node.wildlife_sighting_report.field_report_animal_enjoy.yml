@@ -1,0 +1,21 @@
+uuid: 82f80ebe-5bf2-4d89-98ac-17b20998726b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_animal_enjoy
+    - node.type.wildlife_sighting_report
+  module:
+    - options
+id: node.wildlife_sighting_report.field_report_animal_enjoy
+field_name: field_report_animal_enjoy
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'Do you enjoy seeing these other animals at the feeders?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

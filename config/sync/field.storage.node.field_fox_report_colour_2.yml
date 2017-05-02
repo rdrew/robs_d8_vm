@@ -1,0 +1,30 @@
+uuid: c0cbf5b7-fa52-49ba-b647-ca7cdb3c2719
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_fox_report_colour_2
+field_name: field_fox_report_colour_2
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Red
+      label: Red
+    -
+      value: Silver
+      label: Silver
+    -
+      value: Cross/Patch
+      label: Cross/Patch
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

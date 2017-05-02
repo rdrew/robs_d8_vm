@@ -1,0 +1,19 @@
+uuid: 649885c3-06b7-485b-9f92-374d287b2d80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_diet
+    - node.type.coyote_sighting_report
+id: node.coyote_sighting_report.field_report_diet
+field_name: field_report_diet
+entity_type: node
+bundle: coyote_sighting_report
+label: Diet
+description: 'Please indicate if you observed the animal eating anything.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

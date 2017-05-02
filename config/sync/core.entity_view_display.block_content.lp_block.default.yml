@@ -1,0 +1,33 @@
+uuid: d306153b-6265-497b-8485-749d3fc27db3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.lp_block
+    - field.field.block_content.lp_block.body
+    - field.field.block_content.lp_block.field_featured_image
+  module:
+    - image
+    - text
+id: block_content.lp_block.default
+targetEntityType: block_content
+bundle: lp_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_featured_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

@@ -1,0 +1,27 @@
+uuid: 687f0f93-ef52-47b8-8a7f-cb8667d2cb55
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_report_age_3
+field_name: field_report_age_3
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Adult
+      label: Adult
+    -
+      value: 'Baby (pup, kit, or juvenile)'
+      label: 'Baby (pup, kit, or juvenile)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

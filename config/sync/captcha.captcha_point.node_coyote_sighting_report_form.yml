@@ -1,0 +1,7 @@
+uuid: 5847ffeb-794b-4094-9c75-4c96660f8681
+langcode: en
+status: true
+dependencies: {  }
+formId: node_coyote_sighting_report_form
+captchaType: recaptcha/reCAPTCHA
+label: node_coyote_sighting_report_form

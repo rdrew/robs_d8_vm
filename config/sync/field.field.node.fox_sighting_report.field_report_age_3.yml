@@ -1,0 +1,23 @@
+uuid: f90c625d-0d5e-4c46-8017-23f094b5d831
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_age_3
+    - node.type.fox_sighting_report
+  module:
+    - options
+id: node.fox_sighting_report.field_report_age_3
+field_name: field_report_age_3
+entity_type: node
+bundle: fox_sighting_report
+label: 'Age of third animal'
+description: 'Please indicate the age of the third animal.'
+required: false
+translatable: false
+default_value:
+  -
+    value: Unknown
+default_value_callback: ''
+settings: {  }
+field_type: list_string

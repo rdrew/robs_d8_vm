@@ -1,0 +1,30 @@
+uuid: e16a2b63-1410-46c6-a192-4842b51c3d4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_report_feeder_area
+field_name: field_report_feeder_area
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Rural
+      label: Rural
+    -
+      value: Urban
+      label: Urban
+    -
+      value: Suburban
+      label: Suburban
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,51 @@
+uuid: f0ec3b04-3c6b-4daa-b19a-45484b676051
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:43e10a05-4987-4113-ad4f-bd94473aa7eb'
+  module:
+    - block_content
+    - ctools
+    - node
+    - user
+  theme:
+    - bartik
+id: fox_sighting_report
+theme: bartik
+region: highlighted
+weight: -8
+provider: null
+plugin: 'block_content:43e10a05-4987-4113-ad4f-bd94473aa7eb'
+settings:
+  id: 'block_content:43e10a05-4987-4113-ad4f-bd94473aa7eb'
+  label: 'Red Fox Sightings'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      fox_sighting_report: fox_sighting_report
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      fox_sighting_report: fox_sighting_report
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

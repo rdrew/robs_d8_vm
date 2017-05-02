@@ -1,0 +1,19 @@
+uuid: 0849ee6e-91f2-4eda-a0a1-b30c1ddd2f15
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create coyote_sighting_report content'
+  - 'create fox_sighting_report content'
+  - 'create wildlife_sighting_report content'
+  - 'search content'
+  - 'use text format restricted_html'

@@ -1,0 +1,42 @@
+uuid: b65e6e5e-5e9e-4b87-a3f2-0493942538a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.coyote_sighting_report.field_report_activity
+    - field.field.node.coyote_sighting_report.field_report_address
+    - field.field.node.coyote_sighting_report.field_report_comments
+    - field.field.node.coyote_sighting_report.field_report_count
+    - field.field.node.coyote_sighting_report.field_report_count_more
+    - field.field.node.coyote_sighting_report.field_report_date_and_time
+    - field.field.node.coyote_sighting_report.field_report_dens
+    - field.field.node.coyote_sighting_report.field_report_diet
+    - field.field.node.coyote_sighting_report.field_report_email
+    - field.field.node.coyote_sighting_report.field_report_experience
+    - field.field.node.coyote_sighting_report.field_report_geolocation
+    - field.field.node.coyote_sighting_report.field_report_photo
+    - node.type.coyote_sighting_report
+  module:
+    - user
+id: node.coyote_sighting_report.teaser
+targetEntityType: node
+bundle: coyote_sighting_report
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_report_activity: true
+  field_report_address: true
+  field_report_comments: true
+  field_report_count: true
+  field_report_count_more: true
+  field_report_date_and_time: true
+  field_report_dens: true
+  field_report_diet: true
+  field_report_email: true
+  field_report_experience: true
+  field_report_geolocation: true
+  field_report_photo: true

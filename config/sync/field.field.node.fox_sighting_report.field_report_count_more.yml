@@ -1,0 +1,19 @@
+uuid: e5b18cdb-5e9e-4bfb-9ace-a041e8f37127
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_count_more
+    - node.type.fox_sighting_report
+id: node.fox_sighting_report.field_report_count_more
+field_name: field_report_count_more
+entity_type: node
+bundle: fox_sighting_report
+label: 'Please specify how many animals you saw'
+description: 'If 4 or more, please specify how many animals you saw.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

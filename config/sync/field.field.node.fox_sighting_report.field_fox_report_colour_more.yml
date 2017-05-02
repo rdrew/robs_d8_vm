@@ -1,0 +1,19 @@
+uuid: ca85b19d-9b1a-4021-ae83-a64adc4a3e6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fox_report_colour_more
+    - node.type.fox_sighting_report
+id: node.fox_sighting_report.field_fox_report_colour_more
+field_name: field_fox_report_colour_more
+entity_type: node
+bundle: fox_sighting_report
+label: 'Colour of additional animals'
+description: 'If 4 or more, please indicate the number and colours of the additional animals.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

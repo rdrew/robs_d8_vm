@@ -1,0 +1,33 @@
+uuid: d61c550c-45a9-4e0e-bd28-ebbf8adf1c80
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_report_feeder
+field_name: field_report_feeder
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Standard bird feeder'
+      label: 'Standard bird feeder'
+    -
+      value: 'Throw feed on the lawn'
+      label: 'Throw feed on the lawn'
+    -
+      value: 'Feeding platform'
+      label: 'Feeding platform'
+    -
+      value: 'Other (please specify below)'
+      label: 'Other (please specify below)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

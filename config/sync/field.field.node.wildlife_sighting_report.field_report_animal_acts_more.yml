@@ -1,0 +1,19 @@
+uuid: 9273d72e-5639-4960-9bd0-eae23de584e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_animal_acts_more
+    - node.type.wildlife_sighting_report
+id: node.wildlife_sighting_report.field_report_animal_acts_more
+field_name: field_report_animal_acts_more
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'Please specify what the animals were doing at the feeder'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

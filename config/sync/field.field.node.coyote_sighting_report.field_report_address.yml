@@ -1,0 +1,36 @@
+uuid: b97e4a5a-f1fe-4ee2-95a8-d626c62e0eb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_address
+    - node.type.coyote_sighting_report
+  module:
+    - address
+id: node.coyote_sighting_report.field_report_address
+field_name: field_report_address
+entity_type: node
+bundle: coyote_sighting_report
+label: Address
+description: 'Please enter your name and the address of the location of the animal sighting.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    CA: CA
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    sortingCode: sortingCode
+    addressLine1: addressLine1
+    givenName: givenName
+    familyName: familyName
+    addressLine2: '0'
+    organization: '0'
+    additionalName: '0'
+  langcode_override: ''
+field_type: address

@@ -1,0 +1,23 @@
+uuid: c6367448-a5e0-45a7-926d-000d192b9854
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_frequency
+    - node.type.fox_sighting_report
+  module:
+    - options
+id: node.fox_sighting_report.field_report_frequency
+field_name: field_report_frequency
+entity_type: node
+bundle: fox_sighting_report
+label: 'Frequency of sighting'
+description: 'Please indicate how often you see the animal(s).'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'First time'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

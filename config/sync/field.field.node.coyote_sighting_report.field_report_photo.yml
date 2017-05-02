@@ -1,0 +1,23 @@
+uuid: abad9c26-3abb-4dd6-96c2-c3e2432ebbfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_photo
+    - node.type.coyote_sighting_report
+id: node.coyote_sighting_report.field_report_photo
+field_name: field_report_photo
+entity_type: node
+bundle: coyote_sighting_report
+label: Photo
+description: "Please indicate if you have a photo of the sighting you would like to share.\r\nIf so, please send it to upeicoyote2014@gmail.com"
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes, I have a photo of the sighting and sent it to upeicoyote2014@gmail.com'
+  off_label: 'No'
+field_type: boolean

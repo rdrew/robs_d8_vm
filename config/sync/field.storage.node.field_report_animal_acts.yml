@@ -1,0 +1,33 @@
+uuid: cca56574-9665-4e91-9506-e20e490890c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_report_animal_acts
+field_name: field_report_animal_acts
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Watching the birds'
+      label: 'Watching the birds'
+    -
+      value: 'Feeding on seeds/bread'
+      label: 'Feeding on seeds/bread'
+    -
+      value: 'Feeding on birds'
+      label: 'Feeding on birds'
+    -
+      value: 'Other (please specify below)'
+      label: 'Other (please specify below)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

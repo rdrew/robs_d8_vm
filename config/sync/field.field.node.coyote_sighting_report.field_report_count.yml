@@ -1,0 +1,23 @@
+uuid: a1f8958f-4aaa-4dc9-a5e4-504dd9f56e11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_count
+    - node.type.coyote_sighting_report
+  module:
+    - options
+id: node.coyote_sighting_report.field_report_count
+field_name: field_report_count
+entity_type: node
+bundle: coyote_sighting_report
+label: 'How many animals did you see?'
+description: 'Please indicate how many animals you saw.'
+required: true
+translatable: true
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

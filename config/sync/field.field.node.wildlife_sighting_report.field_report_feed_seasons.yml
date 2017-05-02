@@ -1,0 +1,21 @@
+uuid: 272f2381-6cee-4166-b779-a3d218298350
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_feed_seasons
+    - node.type.wildlife_sighting_report
+  module:
+    - options
+id: node.wildlife_sighting_report.field_report_feed_seasons
+field_name: field_report_feed_seasons
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'Which seasons do you use these feeders, or fill them?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

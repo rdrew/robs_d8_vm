@@ -1,0 +1,17 @@
+uuid: 7392e8eb-055d-4979-ae85-7e6d2c517fec
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Fox sighting report'
+type: fox_sighting_report
+description: 'A data entry form, available to the public, for tracking sightings of red foxes on Prince Edward Island using geolocation and Google Maps to indicate precise location.'
+help: 'Please record all available details of your red fox sighting using the map and form below.'
+new_revision: false
+preview_mode: 0
+display_submitted: false

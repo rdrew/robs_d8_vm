@@ -1,0 +1,75 @@
+uuid: 2352e8ed-e1ca-430c-b407-061763ba5d9a
+langcode: en
+status: true
+dependencies: {  }
+id: wild12
+migration_tags: null
+migration_group: null
+label: 'Import wildlife_sighting_report'
+source:
+  plugin: csv
+  path: /var/www/html/drupal/sites/amars/files/wild12.csv
+  header_row_count: 1
+  keys:
+    - nid
+process:
+  field_report_date_and_time: dateandtime
+  field_report_address/country_code:
+    plugin: default_value
+    default_value: CA
+  field_report_address/langcode:
+    plugin: default_value
+    default_value: en
+  field_report_address/first_name: name
+  field_report_address/address_line1: street
+  field_report_address/locality: city
+  field_report_address/administrative_area:
+    plugin: default_value
+    default_value: PE
+  field_report_address/postal_code: pcode
+  field_report_geolocation/lat: lat
+  field_report_geolocation/lng: lng
+  field_report_email: email
+  field_report_comments: comments
+  field_report_animal_enjoy: enjoyseeing
+  field_report_fox_time: longagofoxes
+  field_report_animal_time: longagoanimals
+  field_report_visit_time: howlongatfeeders
+  field_report_feed_time: howlongfeedingbirds
+  field_report_individuals: howmanyanimalsatonce
+  field_report_animal_visits: howoftenanimalsvisit
+  field_report_feeder:
+    -
+      plugin: explode
+      delimiter: '-'
+      source: whichtypeoffeeding
+  field_report_feeder_animals:
+    -
+      plugin: explode
+      delimiter: '-'
+      source: otheranimalsatfeeder
+  field_report_animal_acts:
+    -
+      plugin: explode
+      delimiter: '-'
+      source: animalsdoingwhatatfeeder
+  field_report_feed_seasons:
+    -
+      plugin: explode
+      delimiter: '-'
+      source: whichseasonsfillfeeder
+  field_report_animal_seasons:
+    -
+      plugin: explode
+      delimiter: '-'
+      source: whichseasonsseeanimals
+  field_report_feeder_area: typeofarea
+  field_report_feeder_animals_more: feederanimalsmore
+  field_report_feeder_more: feedermore
+  field_report_animal_acts_more: animalactsmore
+  type:
+    plugin: default_value
+    default_value: wildlife_sighting_report
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null

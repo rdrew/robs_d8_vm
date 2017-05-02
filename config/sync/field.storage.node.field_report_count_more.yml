@@ -1,0 +1,19 @@
+uuid: e2a30585-924c-4a85-931f-e280b6f84127
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_report_count_more
+field_name: field_report_count_more
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

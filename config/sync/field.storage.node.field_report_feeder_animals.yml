@@ -1,0 +1,39 @@
+uuid: 6325e825-b480-4f8b-87e5-04384e828c0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_report_feeder_animals
+field_name: field_report_feeder_animals
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Squirrels
+      label: Squirrels
+    -
+      value: Chipmunks
+      label: Chipmunks
+    -
+      value: Skunks
+      label: Skunks
+    -
+      value: Raccoons
+      label: Raccoons
+    -
+      value: Foxes
+      label: Foxes
+    -
+      value: 'Other (please specify below)'
+      label: 'Other (please specify below)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

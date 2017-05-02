@@ -1,0 +1,64 @@
+uuid: 581fecaf-c71f-4101-9b66-a59844289a2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fox_sighting_report.field_fox_report_colour
+    - field.field.node.fox_sighting_report.field_fox_report_colour_2
+    - field.field.node.fox_sighting_report.field_fox_report_colour_3
+    - field.field.node.fox_sighting_report.field_fox_report_colour_more
+    - field.field.node.fox_sighting_report.field_report_activity
+    - field.field.node.fox_sighting_report.field_report_address
+    - field.field.node.fox_sighting_report.field_report_age
+    - field.field.node.fox_sighting_report.field_report_age_2
+    - field.field.node.fox_sighting_report.field_report_age_3
+    - field.field.node.fox_sighting_report.field_report_age_more
+    - field.field.node.fox_sighting_report.field_report_comments
+    - field.field.node.fox_sighting_report.field_report_count
+    - field.field.node.fox_sighting_report.field_report_count_more
+    - field.field.node.fox_sighting_report.field_report_date_and_time
+    - field.field.node.fox_sighting_report.field_report_dens
+    - field.field.node.fox_sighting_report.field_report_email
+    - field.field.node.fox_sighting_report.field_report_experience
+    - field.field.node.fox_sighting_report.field_report_frequency
+    - field.field.node.fox_sighting_report.field_report_frequency_more
+    - field.field.node.fox_sighting_report.field_report_geolocation
+    - field.field.node.fox_sighting_report.field_report_photo
+    - field.field.node.fox_sighting_report.field_report_weather
+    - field.field.node.fox_sighting_report.field_report_weather_more
+    - node.type.fox_sighting_report
+  module:
+    - user
+id: node.fox_sighting_report.teaser
+targetEntityType: node
+bundle: fox_sighting_report
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_fox_report_colour: true
+  field_fox_report_colour_2: true
+  field_fox_report_colour_3: true
+  field_fox_report_colour_more: true
+  field_report_activity: true
+  field_report_address: true
+  field_report_age: true
+  field_report_age_2: true
+  field_report_age_3: true
+  field_report_age_more: true
+  field_report_comments: true
+  field_report_count: true
+  field_report_count_more: true
+  field_report_date_and_time: true
+  field_report_dens: true
+  field_report_email: true
+  field_report_experience: true
+  field_report_frequency: true
+  field_report_frequency_more: true
+  field_report_geolocation: true
+  field_report_photo: true
+  field_report_weather: true
+  field_report_weather_more: true

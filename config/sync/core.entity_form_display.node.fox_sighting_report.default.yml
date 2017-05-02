@@ -1,0 +1,554 @@
+uuid: 2754c62b-4c16-4cb0-ba12-414d6555e9b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fox_sighting_report.field_fox_report_colour
+    - field.field.node.fox_sighting_report.field_fox_report_colour_2
+    - field.field.node.fox_sighting_report.field_fox_report_colour_3
+    - field.field.node.fox_sighting_report.field_fox_report_colour_more
+    - field.field.node.fox_sighting_report.field_report_activity
+    - field.field.node.fox_sighting_report.field_report_address
+    - field.field.node.fox_sighting_report.field_report_age
+    - field.field.node.fox_sighting_report.field_report_age_2
+    - field.field.node.fox_sighting_report.field_report_age_3
+    - field.field.node.fox_sighting_report.field_report_age_more
+    - field.field.node.fox_sighting_report.field_report_comments
+    - field.field.node.fox_sighting_report.field_report_count
+    - field.field.node.fox_sighting_report.field_report_count_more
+    - field.field.node.fox_sighting_report.field_report_date_and_time
+    - field.field.node.fox_sighting_report.field_report_dens
+    - field.field.node.fox_sighting_report.field_report_email
+    - field.field.node.fox_sighting_report.field_report_experience
+    - field.field.node.fox_sighting_report.field_report_frequency
+    - field.field.node.fox_sighting_report.field_report_frequency_more
+    - field.field.node.fox_sighting_report.field_report_geolocation
+    - field.field.node.fox_sighting_report.field_report_photo
+    - field.field.node.fox_sighting_report.field_report_weather
+    - field.field.node.fox_sighting_report.field_report_weather_more
+    - node.type.fox_sighting_report
+  module:
+    - address
+    - datetime
+    - geolocation
+id: node.fox_sighting_report.default
+targetEntityType: node
+bundle: fox_sighting_report
+mode: default
+content:
+  field_fox_report_colour:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_fox_report_colour_2:
+    weight: 10
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        099baefe-dffe-40db-9437-2d0a2fe69207:
+          dependee: field_report_count
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: "2\r\n3\r\n4 or more"
+            value_form: {  }
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            element_view:
+              1: '1'
+              2: '2'
+              5: '5'
+              3: '0'
+              4: '0'
+            element_view_per_role: false
+            element_view_roles: {  }
+            element_edit:
+              1: '1'
+              3: '0'
+            element_edit_per_role: false
+            element_edit_roles: {  }
+            selector: ''
+            field_report_count:
+              -
+                value: '1'
+          entity_type: node
+          bundle: fox_sighting_report
+    type: options_select
+    region: content
+  field_fox_report_colour_3:
+    weight: 11
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        e5da3c65-9603-4a44-9cff-40dd84825c63:
+          dependee: field_report_count
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: "3\r\n4 or more"
+            value_form: {  }
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            element_view:
+              1: '1'
+              2: '2'
+              5: '5'
+              3: '0'
+              4: '0'
+            element_view_per_role: false
+            element_view_roles: {  }
+            element_edit:
+              1: '1'
+              3: '0'
+            element_edit_per_role: false
+            element_edit_roles: {  }
+            selector: ''
+            field_report_count:
+              -
+                value: '1'
+          entity_type: node
+          bundle: fox_sighting_report
+    type: options_select
+    region: content
+  field_fox_report_colour_more:
+    weight: 12
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        14875246-a45b-4d41-86c0-1c51347a2fc2:
+          dependee: field_report_count
+          settings:
+            state: visible
+            condition: value
+            grouping: XOR
+            values_set: 4
+            value: ''
+            values: '4 or more'
+            value_form: {  }
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            element_view:
+              1: '1'
+              2: '2'
+              5: '5'
+              3: '0'
+              4: '0'
+            element_view_per_role: false
+            element_view_roles: {  }
+            element_edit:
+              1: '1'
+              3: '0'
+            element_edit_per_role: false
+            element_edit_roles: {  }
+            selector: ''
+            field_report_count:
+              -
+                value: '1'
+          entity_type: node
+          bundle: fox_sighting_report
+    type: string_textarea
+    region: content
+  field_report_activity:
+    weight: 14
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_report_address:
+    weight: 17
+    settings:
+      default_country: CA
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_report_age:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_age_2:
+    weight: 6
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        e2715a0b-151b-4b74-8ec7-1044aee95739:
+          dependee: field_report_count
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: "2\r\n3\r\n4 or more"
+            value_form: {  }
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            element_view:
+              1: '1'
+              2: '2'
+              5: '5'
+              3: '0'
+              4: '0'
+            element_view_per_role: false
+            element_view_roles: {  }
+            element_edit:
+              1: '1'
+              3: '0'
+            element_edit_per_role: false
+            element_edit_roles: {  }
+            selector: ''
+            field_report_count:
+              -
+                value: '2'
+          entity_type: node
+          bundle: fox_sighting_report
+    type: options_select
+    region: content
+  field_report_age_3:
+    weight: 7
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        b1745188-965e-498b-8e14-24ba6912c0e3:
+          dependee: field_report_count
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: "3\r\n4 or more"
+            value_form: {  }
+            effect: fade
+            effect_options:
+              fade:
+                speed: '200'
+              slide:
+                speed: '400'
+            element_view:
+              1: '1'
+              2: '2'
+              5: '5'
+              3: '0'
+              4: '0'
+            element_view_per_role: false
+            element_view_roles: {  }
+            element_edit:
+              1: '1'
+              3: '0'
+            element_edit_per_role: false
+            element_edit_roles: {  }
+            selector: ''
+            field_report_count:
+              -
+                value: '3'
+          entity_type: node
+          bundle: fox_sighting_report
+    type: options_select
+    region: content
+  field_report_age_more:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        050c8b29-1496-4870-8eb9-4153ae6148d5:
+          dependee: field_report_count
+          settings:
+            state: visible
+            condition: value
+            grouping: XOR
+            values_set: 4
+            value: ''
+            values: '4 or more'
+            value_form: {  }
+            effect: fade
+            effect_options:
+              fade:
+                speed: '200'
+              slide:
+                speed: '400'
+            element_view:
+              1: '1'
+              2: '2'
+              5: '5'
+              3: '0'
+              4: '0'
+            element_view_per_role: false
+            element_view_roles: {  }
+            element_edit:
+              1: '1'
+              3: '0'
+            element_edit_per_role: false
+            element_edit_roles: {  }
+            selector: ''
+            field_report_count:
+              -
+                value: '4 or more'
+          entity_type: node
+          bundle: fox_sighting_report
+    type: string_textarea
+    region: content
+  field_report_comments:
+    weight: 22
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_report_count:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_count_more:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        da1b6d6c-0fb0-4ff2-a067-aeb2509f7ef8:
+          dependee: field_report_count
+          settings:
+            state: visible
+            condition: value
+            grouping: XOR
+            values_set: 4
+            value: ''
+            values: '4 or more'
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            element_view:
+              1: '1'
+              2: '2'
+              5: '5'
+              3: '0'
+              4: '0'
+            element_view_per_role: false
+            element_view_roles: {  }
+            element_edit:
+              1: '1'
+              3: '0'
+            element_edit_per_role: false
+            element_edit_roles: {  }
+            selector: ''
+            field_report_count:
+              -
+                value: '4 or more'
+          entity_type: node
+          bundle: fox_sighting_report
+    type: string_textarea
+    region: content
+  field_report_date_and_time:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_report_dens:
+    weight: 16
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_report_email:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_report_experience:
+    weight: 19
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_report_frequency:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_frequency_more:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        bfa4cea5-bd9c-4f81-82ab-844c75aa67ac:
+          dependee: field_report_frequency
+          settings:
+            state: visible
+            condition: value
+            grouping: XOR
+            values_set: 4
+            value: ''
+            values: 'Other (please specify below)'
+            value_form: {  }
+            effect: fade
+            effect_options:
+              fade:
+                speed: '200'
+              slide:
+                speed: '400'
+            element_view:
+              1: '1'
+              2: '2'
+              5: '5'
+              3: '0'
+              4: '0'
+            element_view_per_role: false
+            element_view_roles: {  }
+            element_edit:
+              1: '1'
+              3: '0'
+            element_edit_per_role: false
+            element_edit_roles: {  }
+            selector: ''
+            field_report_frequency:
+              -
+                value: 'Other (please specify below)'
+          entity_type: node
+          bundle: fox_sighting_report
+    type: string_textarea
+    region: content
+  field_report_geolocation:
+    weight: 18
+    settings:
+      default_longitude: '-63.20301532745361'
+      default_latitude: '46.505334149477804'
+      auto_client_location_marker: '1'
+      google_map_settings:
+        height: 680px
+        width: 100%
+        type: HYBRID
+        zoom: '9'
+        maxZoom: 18
+        minZoom: 9
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        fullscreenControl: 1
+        scrollwheel: 1
+        gestureHandling: auto
+        draggable: 1
+        style: ''
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        rotateControl: 0
+        preferScrollingToZooming: 0
+        disableDoubleClickZoom: 0
+      auto_client_location: '0'
+      allow_override_map_settings: 0
+      populate_address_field: ''
+      target_address_field: null
+      explicite_actions_address_field: ''
+    third_party_settings: {  }
+    type: geolocation_googlegeocoder
+    region: content
+  field_report_photo:
+    weight: 20
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_report_weather:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_report_weather_more:
+    weight: 15
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        936c11cc-1dec-4871-ae22-153bee5f9ac1:
+          dependee: field_report_weather
+          settings:
+            state: visible
+            condition: value
+            grouping: XOR
+            values_set: 4
+            value: ''
+            values: 'Other (please specify below)'
+            value_form: {  }
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            element_view:
+              1: '1'
+              2: '2'
+              5: '5'
+              3: '0'
+              4: '0'
+            element_view_per_role: false
+            element_view_roles: {  }
+            element_edit:
+              1: '1'
+              3: '0'
+            element_edit_per_role: false
+            element_edit_roles: {  }
+            selector: ''
+            field_report_weather:
+              -
+                value: Unknown
+          entity_type: node
+          bundle: fox_sighting_report
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  title: true
+  uid: true

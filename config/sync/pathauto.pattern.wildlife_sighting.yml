@@ -1,0 +1,22 @@
+uuid: d3ae7192-d1b8-4f73-b5ce-5272ae1239df
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: wildlife_sighting
+label: 'Wildlife sighting'
+type: 'canonical_entities:node'
+pattern: 'wildlife-sighting/[node:field_report_date_and_time]'
+selection_criteria:
+  efc2f67a-ac39-4f97-8502-9dc55634c3a4:
+    id: node_type
+    bundles:
+      wildlife_sighting_report: wildlife_sighting_report
+    negate: false
+    context_mapping:
+      node: node
+    uuid: efc2f67a-ac39-4f97-8502-9dc55634c3a4
+selection_logic: and
+weight: -5
+relationships: {  }

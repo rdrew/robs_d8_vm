@@ -1,0 +1,17 @@
+uuid: 2c66491b-b65a-4b28-b5d5-333e02cc747f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Wildlife sighting report'
+type: wildlife_sighting_report
+description: 'A data entry form, available to the public, for tracking sightings of wildlife, other than birds, that might frequent bird feeders. Geolocation and Google Maps is used to indicate precise location.'
+help: 'Please record all available details of your wildlife sighting using the map and form below.'
+new_revision: false
+preview_mode: 0
+display_submitted: false

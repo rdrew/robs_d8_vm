@@ -1,0 +1,22 @@
+uuid: 8de8f031-bc51-4ec4-a4a4-cc38ade23724
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: coyote_sighting
+label: 'Coyote sighting'
+type: 'canonical_entities:node'
+pattern: 'coyote-sighting/[node:field_report_date_and_time]'
+selection_criteria:
+  af89d597-ae9e-46c3-b229-253c1d59bf62:
+    id: node_type
+    bundles:
+      coyote_sighting_report: coyote_sighting_report
+    negate: false
+    context_mapping:
+      node: node
+    uuid: af89d597-ae9e-46c3-b229-253c1d59bf62
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,19 @@
+uuid: 8e03aebf-fd11-483a-a01a-75a65dce335d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_experience
+    - node.type.fox_sighting_report
+id: node.fox_sighting_report.field_report_experience
+field_name: field_report_experience
+entity_type: node
+bundle: fox_sighting_report
+label: 'Past or present interesting red fox, coyote, or other wildlife experiences'
+description: 'Please describe any interesting or unusual behaviour you have observed or experienced with red fox, coyote, or other wildlife on PEI.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

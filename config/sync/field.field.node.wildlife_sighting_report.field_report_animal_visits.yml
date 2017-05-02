@@ -1,0 +1,21 @@
+uuid: e33a5b38-81b1-42f1-9b7d-e47d431db2b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_animal_visits
+    - node.type.wildlife_sighting_report
+  module:
+    - options
+id: node.wildlife_sighting_report.field_report_animal_visits
+field_name: field_report_animal_visits
+entity_type: node
+bundle: wildlife_sighting_report
+label: 'How often do these animals visit?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

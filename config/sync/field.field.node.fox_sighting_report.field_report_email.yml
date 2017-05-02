@@ -1,0 +1,19 @@
+uuid: d5a3f404-3b76-4cf1-94ef-4c423b8e2148
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_email
+    - node.type.fox_sighting_report
+id: node.fox_sighting_report.field_report_email
+field_name: field_report_email
+entity_type: node
+bundle: fox_sighting_report
+label: Email
+description: 'Please provide your email address (optional). Your email address will not be published.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

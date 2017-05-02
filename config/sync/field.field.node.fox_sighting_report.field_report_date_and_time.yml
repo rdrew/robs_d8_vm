@@ -1,0 +1,24 @@
+uuid: 391aa85f-dc36-4d19-a132-50559c5db100
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_date_and_time
+    - node.type.fox_sighting_report
+  module:
+    - datetime
+id: node.fox_sighting_report.field_report_date_and_time
+field_name: field_report_date_and_time
+entity_type: node
+bundle: fox_sighting_report
+label: 'Date and time of sighting'
+description: 'Please enter the date and time when you saw the animal(s).'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime
