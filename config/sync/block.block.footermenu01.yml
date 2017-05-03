@@ -1,0 +1,27 @@
+uuid: 1269cb49-2534-4f89-8e1b-717ff0205f56
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menu-01
+  module:
+    - menu_block
+  theme:
+    - helios
+id: footermenu01
+theme: helios
+region: footer
+weight: 0
+provider: null
+plugin: 'menu_block:footer-menu-01'
+settings:
+  id: 'menu_block:footer-menu-01'
+  label: 'Footer menu 01'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer-menu-01:'
+  suggestion: footer_menu_01
+visibility: {  }
