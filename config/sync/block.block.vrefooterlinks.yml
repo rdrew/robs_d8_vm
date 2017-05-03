@@ -1,0 +1,25 @@
+uuid: 4906711f-38d1-43fc-be87-e0ba08f17392
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:433c9fd0-161e-4594-a6ec-51d64c044586'
+  module:
+    - block_content
+  theme:
+    - helios
+id: vrefooterlinks
+theme: helios
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:433c9fd0-161e-4594-a6ec-51d64c044586'
+settings:
+  id: 'block_content:433c9fd0-161e-4594-a6ec-51d64c044586'
+  label: 'Vre footer links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
