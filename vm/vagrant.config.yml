@@ -64,3 +64,7 @@ firewall_log_dropped_packets: false
 apache_listen_port: "80"
 varnish_listen_port: "81"
 varnish_default_backend_port: "80"
+
+# Increase the memory available to your Drupal site.
+#vagrant_memory: 1536
+php_memory_limit: "512M"

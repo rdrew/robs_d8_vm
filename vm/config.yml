@@ -44,3 +44,4 @@ drupal_enable_modules:
   #- admin_toolbar_tools
   #- pathauto
   #- redirect
+php_memory_limit: "512M"
