@@ -1,4 +1,7 @@
-rsync -avz --progress rdrew@137.149.200.22:/var/www/html/amars/web/sites/default/files sites/default/files/	
+rsync -avz --progress rdrew@137.149.200.22:/var/www/html/cshr/web/sites/default/files sites/default/files/	
+
+
+rsync -avz --dry-run --progress --exclude-from 'vm/rsync_config.txt' rdrew@137.149.200.22:/var/www/html/cshr/ .
 
 
 drush sql-sync @remote @local
